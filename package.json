@@ -1,5 +1,9 @@
 {
-  "name": "build-your-own-mint",
+  "name": "Basil",
+  "private": true,
+  "main": "index.js",
+  "author": "Dennis Zhao",
+  "license": "MIT",
   "requires": true,
   "lockfileVersion": 1,
   "dependencies": {
