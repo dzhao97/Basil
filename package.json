@@ -1,8 +1,8 @@
 {
-  "name": "build-your-own-mint",
+  "name": "Basil",
   "private": true,
   "main": "index.js",
-  "author": "Evan You",
+  "author": "Dennis Zhao",
   "license": "MIT",
   "scripts": {
     "test": "node index.js",
