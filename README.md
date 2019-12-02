@@ -30,6 +30,8 @@ First things first - rename `.env.sample` to `.env`. Variables in this file will
 
 - If you've done everything correctly, running `npm run test-plaid` now should log the recent transactions in your connected accounts.
 
+- If you reset your password for any accounts, run `npm run token-plaid <account>` where `account` is an id for the bank you want to refresh authentication information for. This will start a local server similar to when you initially connected the account for you to go through the authentication flow. Once you've logged in, it will return the same access token you had previously.
+
 ### Google Sheets
 
 > I use a Google Sheet because it's convenient. If you don't trust Google or want to build your own fancy interface, you can totally do that - but that's out of scope for this demo.
