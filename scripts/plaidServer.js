@@ -23,10 +23,16 @@ app.use(bodyParser.urlencoded({
 }))
 app.use(bodyParser.json())
 
-app.get('/', (req, res, next) => {
+app.get('/', async (req, res, next) => {
+  var publicToken;
+  if(process.env[`PLAID_TOKEN_${account}`]){
+    var result = await client.createPublicToken(process.env[`PLAID_TOKEN_${account}`])
+    publicToken = result.public_token;
+  }
   res.render(path.resolve(__dirname, 'plaid.ejs'), {
     PLAID_ACCOUNT: account,
-    PLAID_PUBLIC_KEY: process.env.PLAID_PUBLIC_KEY
+    PLAID_PUBLIC_KEY: process.env.PLAID_PUBLIC_KEY,
+    PUBLIC_TOKEN_KEY: publicToken
   })
 })
 

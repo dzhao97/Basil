@@ -173,7 +173,7 @@
   (function($) {
     var products = ['transactions']
 
-    var handler = Plaid.create({
+    var parameters = {
       apiVersion: 'v2',
       clientName: 'Plaid Quickstart',
       env: 'development',
@@ -192,7 +192,13 @@
           });
         });
       },
-    });
+    }
+
+    if('<%= PUBLIC_TOKEN_KEY %>'){
+      parameters['token'] = '<%= PUBLIC_TOKEN_KEY %>'
+    }
+
+    var handler = Plaid.create(parameters);
     var accessToken = qs('access_token');
     if (accessToken != null && accessToken != '') {
       $.post('/set_access_token', {
