@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@google-cloud/storage": "^2.5.0",
-    "axios": "^0.18.1",
+    "axios": "^0.21.1",
     "body-parser": "^1.18.3",
     "dotenv": "^6.2.0",
     "ejs": "^2.6.1",
