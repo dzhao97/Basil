@@ -23,6 +23,6 @@
     "moment": "^2.23.0",
     "plaid": "^2.10.0",
     "promises": "^0.2.5",
-    "underscore": "^1.9.1"
+    "underscore": "^1.12.1"
   }
 }
