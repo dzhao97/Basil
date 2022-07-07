@@ -20,7 +20,7 @@
     "express": "^4.16.4",
     "fs-extra": "^7.0.1",
     "googleapis": "^41.0.1",
-    "moment": "^2.23.0",
+    "moment": "^2.29.4",
     "plaid": "^2.10.0",
     "promises": "^0.2.5",
     "underscore": "^1.9.1"
